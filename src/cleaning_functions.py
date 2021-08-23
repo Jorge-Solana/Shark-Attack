@@ -1,5 +1,13 @@
 import re 
 def activity (x):
+    '''
+    Esta funcion me lee los strings que entran de la columna indicada, me
+    convierte ese string todo en minusculas y me checkea con el patron de 
+    regex indicado para cada variabel, una vez checkeado y comprobado, si 
+    es cierto me cambia todo ese string original por el string indicado.
+    Recibe: string
+    Return: string filtrado por el regex pattern
+    '''
     x = x.lower()
     
     diving = re.findall (r'diving | \.*\diving\.*', str(x))
@@ -34,7 +42,15 @@ def activity (x):
 def species (y):
     y=str(y)
     y = y.lower()
-    
+    '''
+    Esta funcion me lee los strings que entran de la columna indicada, me 
+    los convierte a string (por si hay, que si, algun float), me cambia ese
+    string a minusculas y me checkea con el patron de regex indicado para cada 
+    variable, una vez checkeado y comprobado, si es cierto me cambia todo ese string 
+    original por el string indicado.
+    Recibe: string
+    Return: string filtrado por el regex pattern
+    '''
     white = re.findall(r'white | \.*\white\.*', str(y))
     tiger = re.findall (r'tiger | \.*\tiger\.*', str(y))
     bull = re.findall (r'bull | \.*\bull\.*', str(y))
