@@ -1,5 +1,5 @@
 # Shark Attack
-[portada](../../shark_meme.jpg)
+![portada](https://github.com/Jorge-Solana/Shark-Attack/blob/main/Imagenes/shark_meme.jpg)
 ## What is this project about?
 This project is an attemp of finding good and usable values in a certain data set (not quite clean), for that, clean it and make some aproaches about the hypothesis that will be later commented.
 
